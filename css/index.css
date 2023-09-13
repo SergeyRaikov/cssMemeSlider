@@ -1,1 +1,103 @@
 @import url(./reset.css);
+
+body {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+.slider-wrap {
+
+    padding: 0 2rem;
+}
+
+.slider {
+    width: 50rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider__item {
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s linear;
+}
+
+.slider__controls {
+    display: none;
+}
+
+.slider__controls:checked~label {
+    border: .3rem solid #597cd5;
+    background: #000;
+}
+
+#contr1:checked~.slider1 {
+    margin-right: 0;
+}
+
+#contr2:checked~.slider2 {
+    margin-left: -100%;
+}
+
+#contr3:checked~.slider3 {
+    margin-left: -200%;
+}
+
+#contr4:checked~.slider4 {
+    margin-left: -300%;
+}
+
+.slider__pic {
+    width: 50rem;
+    height: 25rem;
+    border-radius: 1rem;
+}
+
+.slider__footer {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.slider__description {
+    margin-right: auto;
+    overflow: hidden;
+    color: #bbb1b1;
+
+}
+
+.slider__bar {
+    display: flex;
+
+}
+
+.slider__button {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 2rem 0 0;
+    border-radius: 100%;
+    background: #597cd5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.slider__button:hover {
+    background: #fff;
+}
+
+.slider__button:active {
+    background: #bbb1b1;
+}
+
+.slider__button:last-child {
+    margin: 0;
+}
