@@ -30,7 +30,7 @@ body {
 .slider2,
 .slider3,
 .slider4 {
-    transition: margin-left 3s ease-in-out;
+    transition: margin-left 0.5s linear;
 }
 
 .slider__item {
@@ -71,25 +71,25 @@ body {
 
 #contr1:checked~.slider__bar>.mem-description>.mem1 {
     display: flex;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-name: text-motion;
 }
 
 #contr2:checked~.slider__bar>.mem-description>.mem2 {
     display: flex;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-name: text-motion;
 }
 
 #contr3:checked~.slider__bar>.mem-description>.mem3 {
     display: flex;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-name: text-motion;
 }
 
 #contr4:checked~.slider__bar>.mem-description>.mem4 {
     display: flex;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-name: text-motion;
 }
 
@@ -121,7 +121,7 @@ body {
 .mem4 {
     width: 100%;
     display: none;
-    transition: all 0.1s linear;
+    transition: all 0.5s linear;
 
 }
 
@@ -150,7 +150,7 @@ body {
     background: #597cd5;
     color: #fff;
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: all 0.5s linear;
 }
 
 
