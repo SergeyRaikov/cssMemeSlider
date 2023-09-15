@@ -23,12 +23,20 @@ body {
     display: flex;
     align-items: center;
     overflow: hidden;
+
+}
+
+.slider1,
+.slider2,
+.slider3,
+.slider4 {
+    transition: margin-left 3s ease-in-out;
 }
 
 .slider__item {
     width: 100%;
     height: 100%;
-    transition: all 0.5s ease-in-out;
+
 }
 
 .slider__controls {
@@ -39,7 +47,7 @@ body {
 #contr2:checked~.slider__bar>.inner>.btn2,
 #contr3:checked~.slider__bar>.inner>.btn3,
 #contr4:checked~.slider__bar>.inner>.btn4 {
-    border: .3rem solid #fff;
+    border: .3rem solid #597cd5;
     background: #000;
 }
 
@@ -113,7 +121,7 @@ body {
 .mem4 {
     width: 100%;
     display: none;
-    transition: all 0.5s linear;
+    transition: all 0.1s linear;
 
 }
 
