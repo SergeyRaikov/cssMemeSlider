@@ -51,6 +51,13 @@ body {
     background: #000;
 }
 
+#contr1:checked~.slider__bar>.inner>.btn1:hover,
+#contr2:checked~.slider__bar>.inner>.btn2:hover,
+#contr3:checked~.slider__bar>.inner>.btn3:hover,
+#contr4:checked~.slider__bar>.inner>.btn4:hover {
+    border-color: #fff;
+}
+
 
 #contr1:checked~.slider>.slider1 {
     margin-right: 0;
