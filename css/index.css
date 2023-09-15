@@ -36,7 +36,6 @@ body {
 .slider__item {
     width: 100%;
     height: 100%;
-
 }
 
 .slider__controls {
@@ -65,7 +64,6 @@ body {
 
 #contr2:checked~.slider>.slider2 {
     margin-left: -100%;
-
 }
 
 #contr3:checked~.slider>.slider3 {
@@ -119,7 +117,6 @@ body {
     align-items: center;
     font-size: 2rem;
     color: #fff;
-
 }
 
 .mem1,
@@ -129,7 +126,6 @@ body {
     width: 100%;
     display: none;
     transition: all 0.5s linear;
-
 }
 
 
@@ -145,7 +141,6 @@ body {
     justify-content: space-between;
     margin-top: 2rem;
     align-self: flex-end;
-
 }
 
 .slider__button {
@@ -226,5 +221,4 @@ body {
         }
 
     }
-
 }
