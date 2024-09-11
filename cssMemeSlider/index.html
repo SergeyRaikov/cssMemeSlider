@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Meme Slider</title>
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="slider">
+            <input class="slider__controls" type="radio" name="control" id="control-1" checked>
+            <input class="slider__controls" type="radio" name="control" id="control-2">
+            <input class="slider__controls" type="radio" name="control" id="control-3">
+            <input class="slider__controls" type="radio" name="control" id="control-4">
+
+            <div class="slider__box">
+                <div class="slider__item slider-1"><img class="slider__pic" src="./img/01-min.jpg" alt="cat image">
+                </div>
+                <div class="slider__item slider-2"><img class="slider__pic" src="./img/02-min.jpg" alt="cat image">
+                </div>
+                <div class="slider__item slider-3"><img class="slider__pic" src="./img/03-min.jpg" alt="cat image">
+                </div>
+                <div class="slider__item slider-4"><img class="slider__pic" src="./img/04-min.jpg" alt="cat image">
+                </div>
+            </div>
+
+            <div class="slider-bar">
+                <div class="meme-description">
+                    <div class="meme-1">Mem number 1</div>
+                    <div class="meme-2">Mem number 2</div>
+                    <div class="meme-3">Mem number 3</div>
+                    <div class="meme-4">Mem number 4</div>
+                </div>
+                <div class="inner">
+                    <label class="slider__button btn-1" for="control-1"></label>
+                    <label class="slider__button btn-2" for="control-2"></label>
+                    <label class="slider__button btn-3" for="control-3"></label>
+                    <label class="slider__button btn-4" for="control-4"></label>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
 </body>
+
 </html>
