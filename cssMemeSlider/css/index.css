@@ -61,6 +61,22 @@ body {
     margin-left: -300%;
 }
 
+#control-1:checked ~ .slider-bar >  .meme-description > .meme-1{
+    display: block;
+}
+
+#control-2:checked ~ .slider-bar >  .meme-description > .meme-2{
+    display: block;
+}
+
+#control-3:checked ~ .slider-bar >  .meme-description > .meme-3{
+    display: block;
+}
+
+#control-4:checked ~ .slider-bar >  .meme-description > .meme-4{
+    display: block;
+}
+
 .slider__box {
   width: 500px;
   height: 250px;
