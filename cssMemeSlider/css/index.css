@@ -47,6 +47,20 @@ body {
   border-color: #ffffff;
 }
 
+#control-1:checked ~ .slider__box > .slider-1 {
+    margin-left: 0;
+}
+#control-2:checked ~ .slider__box > .slider-2 {
+    margin-left: -100%;
+}
+
+#control-3:checked ~ .slider__box > .slider-3 {
+    margin-left: -200%;
+}
+#control-4:checked ~ .slider__box > .slider-4 {
+    margin-left: -300%;
+}
+
 .slider__box {
   width: 500px;
   height: 250px;
