@@ -28,7 +28,7 @@ body {
 }
 
 .slider__controls {
-  display: block;
+  display: none;
   transition: all 0.5s ease-in-out;
 }
 
@@ -48,33 +48,37 @@ body {
 }
 
 #control-1:checked ~ .slider__box > .slider-1 {
-    margin-left: 0;
+  margin-left: 0;
 }
 #control-2:checked ~ .slider__box > .slider-2 {
-    margin-left: -100%;
+  margin-left: -100%;
 }
 
 #control-3:checked ~ .slider__box > .slider-3 {
-    margin-left: -200%;
+  margin-left: -200%;
 }
 #control-4:checked ~ .slider__box > .slider-4 {
-    margin-left: -300%;
+  margin-left: -300%;
 }
 
-#control-1:checked ~ .slider-bar >  .meme-description > .meme-1{
-    display: block;
+#control-1:checked ~ .slider-bar > .meme-description > .meme-1 {
+  display: block;
+  animation: text-motion 2s linear;
 }
 
-#control-2:checked ~ .slider-bar >  .meme-description > .meme-2{
-    display: block;
+#control-2:checked ~ .slider-bar > .meme-description > .meme-2 {
+  display: block;
+  animation: text-motion 2s linear;
 }
 
-#control-3:checked ~ .slider-bar >  .meme-description > .meme-3{
-    display: block;
+#control-3:checked ~ .slider-bar > .meme-description > .meme-3 {
+  display: block;
+  animation: text-motion 2s linear;
 }
 
-#control-4:checked ~ .slider-bar >  .meme-description > .meme-4{
-    display: block;
+#control-4:checked ~ .slider-bar > .meme-description > .meme-4 {
+  display: block;
+  animation: text-motion 3s linear;
 }
 
 .slider__box {
@@ -96,6 +100,7 @@ body {
 }
 
 .meme-description {
+  position: relative;
   display: flex;
   width: 50%;
 }
@@ -121,5 +126,19 @@ body {
 .meme-2,
 .meme-3,
 .meme-4 {
+  width: 100%;
   display: none;
+  position: absolute;
+}
+
+@keyframes text-motion {
+  0% {
+    right: -100%;
+  }
+  50% {
+    right: 0;
+  }
+  100% {
+    left: 0;
+  }
 }
