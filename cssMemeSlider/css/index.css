@@ -49,16 +49,20 @@ body {
 
 #control-1:checked ~ .slider__box > .slider-1 {
   margin-left: 0;
+  animation: show-slide 2s linear;
 }
 #control-2:checked ~ .slider__box > .slider-2 {
   margin-left: -100%;
+  animation: show-slide 2s linear;
 }
 
 #control-3:checked ~ .slider__box > .slider-3 {
   margin-left: -200%;
+  animation: show-slide 2s linear;
 }
 #control-4:checked ~ .slider__box > .slider-4 {
   margin-left: -300%;
+  animation: show-slide 2s linear;
 }
 
 #control-1:checked ~ .slider-bar > .meme-description > .meme-1 {
@@ -82,15 +86,16 @@ body {
 }
 
 .slider__box {
+  display: flex;
   width: 500px;
   height: 250px;
-  display: flex;
   overflow: hidden;
 }
 
 .slider__pic {
   width: 500px;
   height: 250px;
+  flex: 0 0 500px;
 }
 
 .slider-bar {
@@ -140,5 +145,21 @@ body {
   }
   100% {
     left: 0;
+  }
+}
+
+@keyframes show-slide {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: matrix(10);
   }
 }
