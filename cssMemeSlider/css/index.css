@@ -9,7 +9,7 @@ body {
   align-items: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #cccccc;
   background-color: #000000;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .slider {
-  width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -93,14 +93,13 @@ body {
 }
 
 .slider__pic {
-  width: 500px;
+  width: 100%;
   height: 250px;
-  flex: 0 0 500px;
+  flex: 0 0 auto;
 }
 
 .slider-bar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -112,6 +111,8 @@ body {
 
 .inner {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -133,17 +134,22 @@ body {
 .meme-4 {
   width: 100%;
   display: none;
-  position: absolute;
 }
 
 @keyframes text-motion {
   0% {
+    position: absolute;
+    top: 0;
     right: -100%;
   }
   50% {
+    position: absolute;
+    top: 0;
     right: 0;
   }
   100% {
+    position: absolute;
+    top: 0;
     left: 0;
   }
 }
@@ -161,5 +167,52 @@ body {
   }
   100% {
     transform: matrix(10);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .slider-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .meme-description {
+    order: 2;
+    align-self: flex-start;
+  }
+
+  .inner {
+    order: 1;
+  }
+
+  .slider__button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 531px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .slider__box {
+    max-width: 400px;
+  }
+}
+
+@media (hover: none) {
+  .slider__button {
+    background-color: #597cd5;
+  }
+}
+
+@media (hover: hover) {
+  .slider__button:hover {
+    background-color: #ffffff;
   }
 }
