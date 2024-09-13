@@ -101,12 +101,12 @@ body {
 .slider-bar {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .meme-description {
-  position: relative;
   display: flex;
-  width: 50%;
+  width: 70%;
 }
 
 .inner {
@@ -138,19 +138,13 @@ body {
 
 @keyframes text-motion {
   0% {
-    position: absolute;
-    top: 0;
-    right: -100%;
+    text-align: right;
   }
   50% {
-    position: absolute;
-    top: 0;
-    right: 0;
+    text-align: center;
   }
   100% {
-    position: absolute;
-    top: 0;
-    left: 0;
+    text-align-last: left;
   }
 }
 
@@ -182,6 +176,7 @@ body {
   }
 
   .meme-description {
+    width: 100%;
     order: 2;
     align-self: flex-start;
   }
