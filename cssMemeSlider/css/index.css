@@ -67,22 +67,23 @@ body {
 
 #control-1:checked ~ .slider-bar > .meme-description > .meme-1 {
   display: block;
-  animation: text-motion 2s linear;
+  animation: text-motion 4s linear;
 }
 
 #control-2:checked ~ .slider-bar > .meme-description > .meme-2 {
   display: block;
-  animation: text-motion 2s linear;
+  animation: text-motion 4s linear;
 }
+
 
 #control-3:checked ~ .slider-bar > .meme-description > .meme-3 {
   display: block;
-  animation: text-motion 2s linear;
+  animation: text-motion 4s linear;
 }
 
 #control-4:checked ~ .slider-bar > .meme-description > .meme-4 {
   display: block;
-  animation: text-motion 3s linear;
+  animation: text-motion 4s linear;
 }
 
 .slider__box {
@@ -107,6 +108,7 @@ body {
 .meme-description {
   display: flex;
   width: 70%;
+  line-height: 3rem;
 }
 
 .inner {
@@ -139,12 +141,14 @@ body {
 @keyframes text-motion {
   0% {
     text-align: right;
+   
   }
   50% {
     text-align: center;
   }
   100% {
     text-align-last: left;
+ 
   }
 }
 
@@ -160,7 +164,7 @@ body {
     opacity: 0.5;
   }
   100% {
-    transform: matrix(10);
+    opacity: 1;
   }
 }
 
